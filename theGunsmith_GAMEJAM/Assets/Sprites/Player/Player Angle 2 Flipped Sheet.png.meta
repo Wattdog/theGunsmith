@@ -1,7 +1,49 @@
 fileFormatVersion: 2
-guid: 552301143de39274bbc5c123e0ad8ff1
+guid: 0261b0aea9ea16e4789aaa945bebb48f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5230063186103531345
+    second: Player Angle 2 Flipped Sheet_10
+  - first:
+      213: -5230492256930007093
+    second: Player Angle 2 Flipped Sheet_12
+  - first:
+      213: 8747589904459569190
+    second: Player Angle 2 Flipped Sheet_13
+  - first:
+      213: 6289180456045363789
+    second: Player Angle 2 Flipped Sheet_14
+  - first:
+      213: -9089200165307711954
+    second: Player Angle 2 Flipped Sheet_16
+  - first:
+      213: -19523489780405200
+    second: Player Angle 2 Flipped Sheet_17
+  - first:
+      213: -4335909031123538787
+    second: Player Angle 2 Flipped Sheet_19
+  - first:
+      213: 6366195346397218281
+    second: Player Angle 2 Flipped Sheet_21
+  - first:
+      213: 6011808071819144985
+    second: Player Angle 2 Flipped Sheet_26
+  - first:
+      213: -3763183528264303194
+    second: Player Angle 2 Flipped Sheet_27
+  - first:
+      213: 5325158144381369719
+    second: Player Angle 2 Flipped Sheet_29
+  - first:
+      213: 8239848973892224277
+    second: Player Angle 2 Flipped Sheet_30
+  - first:
+      213: 513894671074503830
+    second: Player Angle 2 Flipped Sheet_32
+  - first:
+      213: -6592379463387195720
+    second: Player Angle 2 Flipped Sheet_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,295 +201,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_9
+      name: Player Angle 2 Flipped Sheet_10
       rect:
         serializedVersion: 2
-        x: 10
-        y: 131
-        width: 30
-        height: 42
+        x: 300
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd68219fcd949ebe0800000000000000
-      internalID: -1447544591802530081
+      spriteID: fa883770e351b67b0800000000000000
+      internalID: -5230063186103531345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_11
+      name: Player Angle 2 Flipped Sheet_12
       rect:
         serializedVersion: 2
-        x: 58
-        y: 131
-        width: 30
-        height: 42
+        x: 348
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c248ee6f4df0b9a0800000000000000
-      internalID: -6219192567793696059
+      spriteID: bc77141310f8967b0800000000000000
+      internalID: -5230492256930007093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_12
+      name: Player Angle 2 Flipped Sheet_13
       rect:
         serializedVersion: 2
-        x: 108
-        y: 131
-        width: 30
-        height: 42
+        x: 394
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bcd19d83448ee7e0800000000000000
-      internalID: -1734303380818240333
+      spriteID: 6281b10ebaea56970800000000000000
+      internalID: 8747589904459569190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_14
+      name: Player Angle 2 Flipped Sheet_14
       rect:
         serializedVersion: 2
-        x: 155
-        y: 131
-        width: 30
-        height: 42
+        x: 448
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df7d5c2076a933000800000000000000
-      internalID: 14524991031072765
+      spriteID: d42c9e2ad48a74750800000000000000
+      internalID: 6289180456045363789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_16
+      name: Player Angle 2 Flipped Sheet_16
       rect:
         serializedVersion: 2
-        x: 201
-        y: 131
-        width: 30
-        height: 42
+        x: 486
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05f50538967bbb480800000000000000
-      internalID: -8882304176255639728
+      spriteID: e2e79663b9cacd180800000000000000
+      internalID: -9089200165307711954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_17
+      name: Player Angle 2 Flipped Sheet_17
       rect:
         serializedVersion: 2
-        x: 250
-        y: 131
-        width: 30
-        height: 42
+        x: 534
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df299605292065970800000000000000
-      internalID: 8743178554023973629
+      spriteID: 03cecde4d73aabff0800000000000000
+      internalID: -19523489780405200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_19
+      name: Player Angle 2 Flipped Sheet_19
       rect:
         serializedVersion: 2
-        x: 297
-        y: 131
-        width: 30
-        height: 42
+        x: 588
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8bad13a70dbc020800000000000000
-      internalID: 2363211652726962345
+      spriteID: d9c297575b1c3d3c0800000000000000
+      internalID: -4335909031123538787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_20
+      name: Player Angle 2 Flipped Sheet_21
       rect:
         serializedVersion: 2
-        x: 343
-        y: 131
-        width: 30
-        height: 42
+        x: 635
+        y: 133
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56d995e3c6539c340800000000000000
-      internalID: 4884494009878814053
+      spriteID: 9e540c020f4495850800000000000000
+      internalID: 6366195346397218281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_21
+      name: Player Angle 2 Flipped Sheet_26
       rect:
         serializedVersion: 2
-        x: 10
+        x: 394
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318610e6c90156190800000000000000
-      internalID: -7969945701515696109
+      spriteID: 91f2b92e69b3e6350800000000000000
+      internalID: 6011808071819144985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_22
+      name: Player Angle 2 Flipped Sheet_27
       rect:
         serializedVersion: 2
-        x: 58
+        x: 448
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a08441e723e91c0800000000000000
-      internalID: -4495099860981642600
+      spriteID: 6ad743de48c76cbc0800000000000000
+      internalID: -3763183528264303194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_24
+      name: Player Angle 2 Flipped Sheet_29
       rect:
         serializedVersion: 2
-        x: 108
+        x: 485
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98efe41632870b20800000000000000
-      internalID: 3100590037258987678
+      spriteID: 77d31a05e13c6e940800000000000000
+      internalID: 5325158144381369719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_26
+      name: Player Angle 2 Flipped Sheet_30
       rect:
         serializedVersion: 2
-        x: 155
+        x: 534
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f338948cd33b0390800000000000000
-      internalID: -7851124503179938824
+      spriteID: 51586b33cf2d95270800000000000000
+      internalID: 8239848973892224277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_27
+      name: Player Angle 2 Flipped Sheet_32
       rect:
         serializedVersion: 2
-        x: 201
+        x: 588
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a560ccfa168ed0f10800000000000000
-      internalID: 2237700096131860058
+      spriteID: 69cac590b78b12700800000000000000
+      internalID: 513894671074503830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Angle 2 Sheet_29
+      name: Player Angle 2 Flipped Sheet_34
       rect:
         serializedVersion: 2
-        x: 250
+        x: 635
         y: 89
-        width: 30
-        height: 42
+        width: 28
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccdc8cec1b90901c0800000000000000
-      internalID: -4537084490315936308
+      spriteID: 8b6d9345ec92384a0800000000000000
+      internalID: -6592379463387195720
       vertices: []
       indices: 
       edges: []
