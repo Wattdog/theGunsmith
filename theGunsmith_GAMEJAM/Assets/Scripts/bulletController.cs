@@ -29,7 +29,7 @@ public class bulletController : MonoBehaviour
     {
         if (bulletGo)
         {
-            transform.position += direction * Time.deltaTime; 
+            transform.position += direction* bulletSpeed * Time.deltaTime; 
         }
     }
 
@@ -42,7 +42,7 @@ public class bulletController : MonoBehaviour
         Vector3 unitVec = (mouseLoc - currentLoc).normalized;
         direction = unitVec;
 
-        direction *= bulletSpeed;
+ 
     }
 
 

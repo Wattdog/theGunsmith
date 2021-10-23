@@ -314,8 +314,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ef8388dfc836a4a86577dde8a7d149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 2.5
   health: 1
+  bulletPrefeab: {fileID: 8782644786853337912, guid: 278b3c3ab1bc2bf458b18cac7f5b32a9,
+    type: 3}
+  bulletSpeed: 5
+  currentWeapon: 0
+  lastMode: 0
+  pistol_RateOfFire: 1
+  pistol_ClipSize: 6
+  pistol_ReloadSpeed: 2
+  shotgun_RateOfFire: 1.5
+  shotgun_ClipSize: 4
+  shotgun_ReloadSpeed: 4
+  rifle_RateOfFire: 0
+  rifle_ClipSize: 0
+  rifle_ReloadSpeed: 0
+  machineGun_RateOfFire: 0
+  machineGun_ClipSize: 0
+  machineGun_ReloadSpeed: 0
+  canFire: 1
+  currentClip: 0
 --- !u!4 &1542281880
 Transform:
   m_ObjectHideFlags: 0
