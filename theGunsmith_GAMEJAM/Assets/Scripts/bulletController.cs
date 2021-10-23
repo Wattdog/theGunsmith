@@ -18,10 +18,16 @@ public class bulletController : MonoBehaviour
     public Vector3 direction = new Vector3();
 
     private bool bulletGo = false;
+    public bool isRifle;
+    public int rifleHealth = 3;
+    // if owner is set to false, it is the gunsmith's bullet
+    // if owner is set to true, it is an enemey bullet
+    public bool owner = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        isRifle = false;
     }
 
     // Update is called once per frame
@@ -31,6 +37,8 @@ public class bulletController : MonoBehaviour
         {
             transform.position += direction* bulletSpeed * Time.deltaTime; 
         }
+
+        // when doing collisions implement rifle bullet health for x many impacts
     }
 
     public void startBullet()
@@ -41,8 +49,6 @@ public class bulletController : MonoBehaviour
     {
         Vector3 unitVec = (mouseLoc - currentLoc).normalized;
         direction = unitVec;
-
- 
     }
 
 

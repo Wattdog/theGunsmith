@@ -8,7 +8,7 @@ public class playerController : MonoBehaviour
 
 
     [SerializeField] public float moveSpeed;
-    [SerializeField] public int health;
+    [SerializeField] public float health;
 
     public GameObject bulletPrefeab;
     public float bulletSpeed;
@@ -60,103 +60,126 @@ public class playerController : MonoBehaviour
     void Update()
     {
 
-        // Get mouse location and cast to world space
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
+        if (health >= 0)
+        {
+            // Get mouse location and cast to world space
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = Camera.main.nearClipPlane;
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
 
-        // Poll inputs
-        Vector3 move = new Vector3();
-        if (Input.GetKey(KeyCode.A))
-        {
-            move.x -= moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            move.x += moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            move.y += moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            move.y -= moveSpeed * Time.deltaTime;
-        }
-
-        // weapon switching
-        if (Input.GetKey(KeyCode.Alpha1)) { currentWeapon = 0; }
-        if (Input.GetKey(KeyCode.Alpha2)) { currentWeapon = 1; }
-        if (Input.GetKey(KeyCode.Alpha3)) { currentWeapon = 2; }
-        if (Input.GetKey(KeyCode.Alpha4)) { currentWeapon = 3; }
-
-        if (currentWeapon != lastMode) { changeGun(currentWeapon); }
-
-        // create and fire the bullets
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            if (canFire)
+            // Poll inputs
+            Vector3 move = new Vector3();
+            if (Input.GetKey(KeyCode.A))
             {
-                canFire = false;
-
-                if (currentWeapon == 0 || currentWeapon == 2) // Pistol and Rifle
-                {
-
-                    GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
-                    newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet.GetComponent<bulletController>().startBullet();
-
-                    if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
-                    else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; } 
-                }
-                else if (currentWeapon == 1) // Shotgun
-                {
-                    GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
-                        worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * 2.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * 2.0f)), (
-                        worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * 2.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * 2.0f))));
-                    newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet.GetComponent<bulletController>().startBullet();
-
-                    GameObject newBullet1 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet1.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
-                        worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * -2.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * -2.0f)), (
-                        worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * -2.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * -2.0f))));
-                    newBullet1.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet1.GetComponent<bulletController>().startBullet();
-
-                    GameObject newBullet2 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet2.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
-                        worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * 4.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * 4.0f)), (
-                        worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * 4.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * 4.0f))));
-                    newBullet2.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet2.GetComponent<bulletController>().startBullet();
-
-                    GameObject newBullet3 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet3.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
-                        worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * -4.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * -4.0f)), (
-                        worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * -4.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * -4.0f))));
-                    newBullet3.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet3.GetComponent<bulletController>().startBullet();
-
-                    GameObject newBullet4 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
-                    newBullet4.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
-                    newBullet4.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
-                    newBullet4.GetComponent<bulletController>().startBullet();
-
-                    if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
-                    else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
-                }
-                else if (currentWeapon == 3) // Machine Gun
-                {
-
-                }
-                
+                move.x -= moveSpeed * Time.deltaTime;
             }
-        }
+            if (Input.GetKey(KeyCode.D))
+            {
+                move.x += moveSpeed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                move.y += moveSpeed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                move.y -= moveSpeed * Time.deltaTime;
+            }
 
-        GetComponent<Transform>().position = GetComponent<Transform>().position += move;
+            // weapon switching
+            if (Input.GetKey(KeyCode.Alpha1)) { currentWeapon = 0; }
+            if (Input.GetKey(KeyCode.Alpha2)) { currentWeapon = 1; }
+            if (Input.GetKey(KeyCode.Alpha3)) { currentWeapon = 2; }
+            if (Input.GetKey(KeyCode.Alpha4)) { currentWeapon = 3; }
+
+            if (currentWeapon != lastMode) { changeGun(currentWeapon); }
+
+            // create and fire the bullets
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                if (canFire)
+                {
+                    canFire = false;
+
+                    if (currentWeapon == 0) // Pistol
+                    {
+
+                        GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
+                        newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet.GetComponent<bulletController>().startBullet();
+
+                        if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
+                        else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
+                    }
+                    else if (currentWeapon == 1) // Shotgun
+                    {
+                        GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
+                            worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * 2.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * 2.0f)), (
+                            worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * 2.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * 2.0f))));
+                        newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet.GetComponent<bulletController>().startBullet();
+
+                        GameObject newBullet1 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet1.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
+                            worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * -2.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * -2.0f)), (
+                            worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * -2.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * -2.0f))));
+                        newBullet1.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet1.GetComponent<bulletController>().startBullet();
+
+                        GameObject newBullet2 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet2.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
+                            worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * 4.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * 4.0f)), (
+                            worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * 4.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * 4.0f))));
+                        newBullet2.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet2.GetComponent<bulletController>().startBullet();
+
+                        GameObject newBullet3 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet3.GetComponent<bulletController>().setupBullet(transform.position, new Vector3((
+                            worldPosition.x * Mathf.Cos(Mathf.Deg2Rad * -4.0f)) - (worldPosition.y * Mathf.Sin(Mathf.Deg2Rad * -4.0f)), (
+                            worldPosition.x * Mathf.Sin(Mathf.Deg2Rad * -4.0f)) + (worldPosition.y * Mathf.Cos(Mathf.Deg2Rad * -4.0f))));
+                        newBullet3.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet3.GetComponent<bulletController>().startBullet();
+
+                        GameObject newBullet4 = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet4.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
+                        newBullet4.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet4.GetComponent<bulletController>().startBullet();
+
+                        if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
+                        else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
+                    }
+                    else if (currentWeapon == 2) // Rifle
+                    {
+                        GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+                        newBullet.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
+                        newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+                        newBullet.GetComponent<bulletController>().isRifle = true;
+                        newBullet.GetComponent<bulletController>().owner = false;
+                        newBullet.GetComponent<bulletController>().startBullet();
+
+                        if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
+                        else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
+                    }
+                    else if (currentWeapon == 3) // Machine Gun
+                    {
+                        StartCoroutine(machineGunBulletSpawner());
+                        if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
+                        else { StartCoroutine(rateOfFireDelayFunction()); currentClip -= 4; }
+                    }
+
+                }
+            }
+
+            GetComponent<Transform>().position = GetComponent<Transform>().position += move; 
+        }
     }
 
     IEnumerator rateOfFireDelayFunction()
@@ -170,6 +193,26 @@ public class playerController : MonoBehaviour
         yield return new WaitForSeconds(reloadSpeed);
         canFire = true;
         currentClip = clipSize;
+    }
+
+    IEnumerator machineGunBulletSpawner()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = Camera.main.nearClipPlane;
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
+
+            GameObject newBullet = Instantiate(bulletPrefeab, transform.position, transform.rotation, transform.parent);
+            newBullet.GetComponent<bulletController>().setupBullet(transform.position, worldPosition);
+            newBullet.GetComponent<bulletController>().bulletSpeed = bulletSpeed;
+            newBullet.GetComponent<bulletController>().owner = false;
+            newBullet.GetComponent<bulletController>().startBullet();
+
+            yield return new WaitForSeconds(0.1f);
+
+        }
+        yield return null; ;
     }
 
     private void changeGun(int newMode)
@@ -205,5 +248,22 @@ public class playerController : MonoBehaviour
 
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameObject collider = collision.gameObject;
+        if (collider.tag == "Bullet")
+        {
+            if (collider.GetComponent<bulletController>().owner)
+            {
+                if (collider.GetComponent<bulletController>().isRifle)
+                {
+                    // kill enemey and bullet
+                    GameObject.Destroy(collider);
+                    health -= 0.1f;
+                }
+            }
+        }
     }
 }
