@@ -5184,31 +5184,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9045470027348319765}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2090074782 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9045470027845583345, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 9045470027348319765}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2090074784
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090074782}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40d716f49880f8c49930b56a0928b8ce, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2138424042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,32 +5235,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 817706377309817808, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045470027845583347, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045470027845583347, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-        type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045470027845583347, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -2985951961245068601, guid: 80e0d80dcc8bdb84fab09e66ef206298,
-        type: 3}
-    - target: {fileID: 9045470028000347266, guid: 0b9c0284853d5f143bdd7ac0812111d2,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 2090074784}
     - target: {fileID: 9045470028000347267, guid: 0b9c0284853d5f143bdd7ac0812111d2,
         type: 3}
       propertyPath: m_Name
@@ -5304,7 +5253,7 @@ PrefabInstance:
     - target: {fileID: 9045470028000347277, guid: 0b9c0284853d5f143bdd7ac0812111d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03886446
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 9045470028000347277, guid: 0b9c0284853d5f143bdd7ac0812111d2,
         type: 3}
