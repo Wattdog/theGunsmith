@@ -78,18 +78,21 @@ public class playerController : MonoBehaviour
                 animator.SetBool("Left", true);
             }
             else { animator.SetBool("Left", false); }
+
             if (Input.GetKey(KeyCode.D))
             {
                 move.x += moveSpeed * Time.deltaTime;
                 animator.SetBool("Right", true);
             }
             else { animator.SetBool("Right", false); }
+
             if (Input.GetKey(KeyCode.W))
             {
                 move.y += moveSpeed * Time.deltaTime;
                 animator.SetBool("Backward", true);
             }
             else { animator.SetBool("Backward", false); }
+
             if (Input.GetKey(KeyCode.S))
             {
                 move.y -= moveSpeed * Time.deltaTime;
@@ -102,17 +105,16 @@ public class playerController : MonoBehaviour
                 animator.SetBool("Forward", false);
                 animator.SetBool("Right", false);
                 animator.SetBool("Angle1", true);
-                move.x += move.y * Time.deltaTime;
             }
             else
             { animator.SetBool("Angle1", false); }
+
 
             if (move.x > 0 && move.y > 0)
             {
                 animator.SetBool("Backward", false);
                 animator.SetBool("Right", false);
-                animator.SetBool("Angle2", true);
-                move.x += move.y * Time.deltaTime;
+                animator.SetBool("Angle2", true);   
             }
             else
             { animator.SetBool("Angle2", false); }
@@ -122,7 +124,6 @@ public class playerController : MonoBehaviour
                 animator.SetBool("Forward", false);
                 animator.SetBool("Left", false);
                 animator.SetBool("Angle1Flipped", true);
-                move.x -= move.y * Time.deltaTime;
             }
             else
             { animator.SetBool("Angle1Flipped", false); }
@@ -132,7 +133,6 @@ public class playerController : MonoBehaviour
                 animator.SetBool("Backward", false);
                 animator.SetBool("Left", false);
                 animator.SetBool("Angle2Flipped", true);
-                move.x -= move.y * Time.deltaTime;
             }
             else
             { animator.SetBool("Angle2Flipped", false); }
@@ -164,29 +164,51 @@ public class playerController : MonoBehaviour
                         // Play animation
                         animator.SetBool("Shoot", true);
 
-                        if (animator.GetBool("Forward")) { animator.Play("PlayerShootingFront");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Backward")) { animator.Play("PlayerShootingBack");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Left")) { animator.Play("PlayerShootingSideFlipped");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Right")) { animator.Play("PlayerShootingSide");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1")) { animator.Play("PlayerShootingAngle1");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle2")) { animator.Play("PlayerShootingAngle2");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1Flipped")) { animator.Play("PlayerShootingAngle1Flipped");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle2Flipped")) { animator.Play("PlayerShootingAngle2Flipped");
-                            animator.SetBool("Shoot", false); }
+                        if (animator.GetBool("Forward"))
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Backward"))
+                        {
+                            animator.Play("PlayerShootingBack");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Left"))
+                        {
+                            animator.Play("PlayerShootingSideFlipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Right"))
+                        {
+                            animator.Play("PlayerShootingSide");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1"))
+                        {
+                            animator.Play("PlayerShootingAngle1");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2"))
+                        {
+                            animator.Play("PlayerShootingAngle2");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle1Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle2Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
 
 
                         if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
@@ -235,29 +257,51 @@ public class playerController : MonoBehaviour
                         // Play animation
                         animator.SetBool("Shoot", true);
 
-                        if (animator.GetBool("Forward")) { animator.Play("PlayerShootingFront");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Backward")) { animator.Play("PlayerShootingBack");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Left")) { animator.Play("PlayerShootingSideFlipped");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Right")) { animator.Play("PlayerShootingSide");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1")) { animator.Play("PlayerShootingAngle1");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle2")) { animator.Play("PlayerShootingAngle2");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1Flipped")) { animator.Play("PlayerShootingAngle1Flipped");
-                            animator.SetBool("Shoot", false);}
-
-                        if (animator.GetBool("Angle2Flipped")) { animator.Play("PlayerShootingAngle2Flipped");
-                            animator.SetBool("Shoot", false); }
+                        if (animator.GetBool("Forward"))
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Backward"))
+                        {
+                            animator.Play("PlayerShootingBack");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Left"))
+                        {
+                            animator.Play("PlayerShootingSideFlipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Right"))
+                        {
+                            animator.Play("PlayerShootingSide");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1"))
+                        {
+                            animator.Play("PlayerShootingAngle1");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2"))
+                        {
+                            animator.Play("PlayerShootingAngle2");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle1Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle2Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
 
                         if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
                         else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
@@ -274,29 +318,52 @@ public class playerController : MonoBehaviour
                         // Play Animation
                         animator.SetBool("Shoot", true);
 
-                        if (animator.GetBool("Forward")) { animator.Play("PlayerShootingFront");
-                            animator.SetBool("Shoot", false); }
+                        if (animator.GetBool("Forward"))
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Backward"))
+                        {
+                            animator.Play("PlayerShootingBack");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Left"))
+                        {
+                            animator.Play("PlayerShootingSideFlipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Right"))
+                        {
+                            animator.Play("PlayerShootingSide");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1"))
+                        {
+                            animator.Play("PlayerShootingAngle1");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2"))
+                        {
+                            animator.Play("PlayerShootingAngle2");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle1Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle2Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
 
-                        if (animator.GetBool("Backward")) { animator.Play("PlayerShootingBack");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Left")) { animator.Play("PlayerShootingSideFlipped");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Right")) { animator.Play("PlayerShootingSide");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1")) { animator.Play("PlayerShootingAngle1");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle2")) { animator.Play("PlayerShootingAngle2");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1Flipped")) { animator.Play("PlayerShootingAngle1Flipped");
-                            animator.SetBool("Shoot", false);}
-
-                        if (animator.GetBool("Angle2Flipped")) { animator.Play("PlayerShootingAngle2Flipped");
-                            animator.SetBool("Shoot", false); }
 
                         if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
                         else { StartCoroutine(rateOfFireDelayFunction()); currentClip--; }
@@ -308,29 +375,51 @@ public class playerController : MonoBehaviour
                         // Play Animation
                         animator.SetBool("Shoot", true);
 
-                        if (animator.GetBool("Forward")) { animator.Play("PlayerShootingFront");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Backward")) { animator.Play("PlayerShootingBack");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Left")) { animator.Play("PlayerShootingSideFlipped");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Right")) { animator.Play("PlayerShootingSide");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1")) { animator.Play("PlayerShootingAngle1");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle2")) { animator.Play("PlayerShootingAngle2");
-                            animator.SetBool("Shoot", false); }
-
-                        if (animator.GetBool("Angle1Flipped")) { animator.Play("PlayerShootingAngle1Flipped");
-                            animator.SetBool("Shoot", false);}
-
-                        if (animator.GetBool("Angle2Flipped")) { animator.Play("PlayerShootingAngle2Flipped");
-                            animator.SetBool("Shoot", false); }
+                        if (animator.GetBool("Forward"))
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Backward"))
+                        {
+                            animator.Play("PlayerShootingBack");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Left"))
+                        {
+                            animator.Play("PlayerShootingSideFlipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Right"))
+                        {
+                            animator.Play("PlayerShootingSide");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1"))
+                        {
+                            animator.Play("PlayerShootingAngle1");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2"))
+                        {
+                            animator.Play("PlayerShootingAngle2");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle1Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle1Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else if (animator.GetBool("Angle2Flipped"))
+                        {
+                            animator.Play("PlayerShootingAngle2Flipped");
+                            animator.SetBool("Shoot", false);
+                        }
+                        else
+                        {
+                            animator.Play("PlayerShootingFront");
+                            animator.SetBool("Shoot", false);
+                        }
 
                         if (currentClip <= 0) { StartCoroutine(reloadSpeedDelayFunction()); }
                         else { StartCoroutine(rateOfFireDelayFunction()); currentClip -= 4; }
