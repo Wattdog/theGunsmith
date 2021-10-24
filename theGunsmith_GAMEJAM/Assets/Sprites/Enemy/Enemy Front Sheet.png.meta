@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: b2a56ba3d00fd6e41875a0c66e034033
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2507040123085594299
+    second: Enemy Front Sheet_0
+  - first:
+      213: -9111800584604382566
+    second: Enemy Front Sheet_2
+  - first:
+      213: 5558230110528287224
+    second: Enemy Front Sheet_3
+  - first:
+      213: 7664399500341501766
+    second: Enemy Front Sheet_5
+  - first:
+      213: -3608457668516025530
+    second: Enemy Front Sheet_6
+  - first:
+      213: -8298552585959776875
+    second: Enemy Front Sheet_7
+  - first:
+      213: -661012991661371491
+    second: Enemy Front Sheet_10
+  - first:
+      213: 3784661888135110899
+    second: Enemy Front Sheet_12
+  - first:
+      213: -8443026839262372123
+    second: Enemy Front Sheet_13
+  - first:
+      213: -8133002783567217750
+    second: Enemy Front Sheet_14
+  - first:
+      213: 5635944038320970248
+    second: Enemy Front Sheet_16
+  - first:
+      213: 640681629792845706
+    second: Enemy Front Sheet_17
+  - first:
+      213: 6837473046390467195
+    second: Enemy Front Sheet_36
+  - first:
+      213: 73697896280629064
+    second: Enemy Front Sheet_38
+  - first:
+      213: 8403891641454365338
+    second: Enemy Front Sheet_39
+  - first:
+      213: 861152282076743609
+    second: Enemy Front Sheet_41
+  - first:
+      213: -4305020758170787364
+    second: Enemy Front Sheet_42
+  - first:
+      213: 4315911400899328520
+    second: Enemy Front Sheet_43
+  - first:
+      213: -888701407587807119
+    second: Enemy Front Sheet_45
+  - first:
+      213: 6898890730151160935
+    second: Enemy Front Sheet_46
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,7 +217,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemy Front Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 179
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541e4d97a44353dd0800000000000000
+      internalID: -2507040123085594299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 179
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a857a05a16c8180800000000000000
+      internalID: -9111800584604382566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 179
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f13be536dcc22d40800000000000000
+      internalID: 5558230110528287224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 179
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f5982ecba6d5a60800000000000000
+      internalID: 7664399500341501766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 179
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b61117ede2cedc0800000000000000
+      internalID: -3608457668516025530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 179
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dd7f3046e95dc80800000000000000
+      internalID: -8298552585959776875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 179
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f0b10bf2c93d6f0800000000000000
+      internalID: -661012991661371491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 179
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0a04d6fe1d58430800000000000000
+      internalID: 3784661888135110899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 179
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee5da0a2d754da80800000000000000
+      internalID: -8443026839262372123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 177
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab76301f05c12f80800000000000000
+      internalID: -8133002783567217750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 179
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a1a1a0e35e63e40800000000000000
+      internalID: 5635944038320970248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 179
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fbbed3c8824e800800000000000000
+      internalID: 640681629792845706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 137
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a696b528593ee50800000000000000
+      internalID: 6837473046390467195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 137
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f1080a8d3d50100800000000000000
+      internalID: 73697896280629064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 137
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a03c31cee90a470800000000000000
+      internalID: 8403891641454365338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 137
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b783be107d63fb00800000000000000
+      internalID: 861152282076743609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 137
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd12c8eed6e7144c0800000000000000
+      internalID: -4305020758170787364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 137
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ab9ac6d8235eb30800000000000000
+      internalID: 4315911400899328520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 137
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170d65147c2baa3f0800000000000000
+      internalID: -888701407587807119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Front Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 137
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c25e23198cdbf50800000000000000
+      internalID: 6898890730151160935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

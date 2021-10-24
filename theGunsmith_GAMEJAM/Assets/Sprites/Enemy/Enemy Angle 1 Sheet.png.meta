@@ -1,7 +1,91 @@
 fileFormatVersion: 2
 guid: 191b8a411c5357a40b9e4c01df486ca3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7479359628413173577
+    second: Enemy Angle 1 Sheet_0
+  - first:
+      213: -1510218623035746505
+    second: Enemy Angle 1 Sheet_2
+  - first:
+      213: -3370069653737173045
+    second: Enemy Angle 1 Sheet_3
+  - first:
+      213: -8525180898543744007
+    second: Enemy Angle 1 Sheet_4
+  - first:
+      213: 1750111402293409549
+    second: Enemy Angle 1 Sheet_6
+  - first:
+      213: 426952192939310610
+    second: Enemy Angle 1 Sheet_7
+  - first:
+      213: 6026848269899060573
+    second: Enemy Angle 1 Sheet_10
+  - first:
+      213: -5278976629136541227
+    second: Enemy Angle 1 Sheet_12
+  - first:
+      213: 6497078315000210817
+    second: Enemy Angle 1 Sheet_13
+  - first:
+      213: 4358856939567352248
+    second: Enemy Angle 1 Sheet_14
+  - first:
+      213: 7259057345671192872
+    second: Enemy Angle 1 Sheet_16
+  - first:
+      213: 9067101377602378201
+    second: Enemy Angle 1 Sheet_17
+  - first:
+      213: 6898264235865089326
+    second: Enemy Angle 1 Sheet_18
+  - first:
+      213: 7754284641303137633
+    second: Enemy Angle 1 Sheet_20
+  - first:
+      213: 1300876192546618024
+    second: Enemy Angle 1 Sheet_21
+  - first:
+      213: 6015560498083455900
+    second: Enemy Angle 1 Sheet_23
+  - first:
+      213: 8097180600708254608
+    second: Enemy Angle 1 Sheet_24
+  - first:
+      213: 6341782517117277086
+    second: Enemy Angle 1 Sheet_25
+  - first:
+      213: -5974540768018662455
+    second: Enemy Angle 1 Sheet_27
+  - first:
+      213: -1239458666490615850
+    second: Enemy Angle 1 Sheet_28
+  - first:
+      213: 7854472442723957091
+    second: Enemy Angle 1 Sheet_30
+  - first:
+      213: -8003170386815968958
+    second: Enemy Angle 1 Sheet_31
+  - first:
+      213: -2903294109161676300
+    second: Enemy Angle 1 Sheet_33
+  - first:
+      213: 8565869846201800846
+    second: Enemy Angle 1 Sheet_34
+  - first:
+      213: 7922938121518839453
+    second: Enemy Angle 1 Sheet_35
+  - first:
+      213: -9157457124461190031
+    second: Enemy Angle 1 Sheet_37
+  - first:
+      213: 578143061550243763
+    second: Enemy Angle 1 Sheet_38
+  - first:
+      213: 7981671968400121898
+    second: Enemy Angle 1 Sheet_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,7 +241,595 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 185
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b009099b0af33890800000000000000
+      internalID: -7479359628413173577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 185
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73756c0f920aa0be0800000000000000
+      internalID: -1510218623035746505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 185
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf0cac518b1b31d0800000000000000
+      internalID: -3370069653737173045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 185
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbca50242970b980800000000000000
+      internalID: -8525180898543744007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 185
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d073f034c05a94810800000000000000
+      internalID: 1750111402293409549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 185
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eb834e1c6dce500800000000000000
+      internalID: 426952192939310610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 184
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55d282e19aa3a350800000000000000
+      internalID: 6026848269899060573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d93aba99be4db6b0800000000000000
+      internalID: -5278976629136541227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 184
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1852b73fd424a2a50800000000000000
+      internalID: 6497078315000210817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 184
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b988a5da45cd7c30800000000000000
+      internalID: 4358856939567352248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 184
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821ebec123a5db460800000000000000
+      internalID: 7259057345671192872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 184
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9d172d9a0d4dd70800000000000000
+      internalID: 9067101377602378201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 184
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25258126ce8bbf50800000000000000
+      internalID: 6898264235865089326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 184
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d042c1cc0cc9b60800000000000000
+      internalID: 7754284641303137633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 141
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aaf0893104ad0210800000000000000
+      internalID: 1300876192546618024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 141
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93e225b6609b7350800000000000000
+      internalID: 6015560498083455900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 141
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b466b0bd6fe5070800000000000000
+      internalID: 8097180600708254608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 141
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93de8f5999820850800000000000000
+      internalID: 6341782517117277086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 141
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb782273da261da0800000000000000
+      internalID: -5974540768018662455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 141
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d72c06e8ee8ccee0800000000000000
+      internalID: -1239458666490615850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 141
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369f7a66211b00d60800000000000000
+      internalID: 7854472442723957091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 141
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24998e09fe60fe090800000000000000
+      internalID: -8003170386815968958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 141
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f12fe8d36d65b7d0800000000000000
+      internalID: -2903294109161676300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 141
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88961fbd3510e670800000000000000
+      internalID: 8565869846201800846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 141
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96f7867e3ee3fd60800000000000000
+      internalID: 7922938121518839453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 141
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174ee9a734d2ae080800000000000000
+      internalID: -9157457124461190031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 141
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf1f052d0af50800800000000000000
+      internalID: 578143061550243763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Angle 1 Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 141
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20ae26dd5894ce60800000000000000
+      internalID: 7981671968400121898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
